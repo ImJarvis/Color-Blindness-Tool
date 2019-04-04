@@ -887,12 +887,6 @@ normalFilter = set(tuple(i) for i in normalColorList)
 protanopiaFilter = set(tuple(i) for i in protanopiaColorList)
 deuteranopiaFilter = set(tuple(i) for i in deuteranopiaColorList)
 tritanopiaFilter = set(tuple(i) for i in tritanopiaColorList)
-""" 
-frameName = "./original/"+str(videoName)+"_Frame_"+str(frameCounter)+".jpg"
-pixMarkedName = "./output/"+str(videoName)+"_Frame_"+str(frameCounter)+".jpg"
-maskedName = "./difference/"+str(videoName)+"_Frame_"+str(frameCounter)+".jpg" """
-#default filter
-
 
 def chooseFilterList(inputFilterName):
     if inputFilterName == "Proto":
@@ -1032,9 +1026,6 @@ def checkFilter(inputFilter):
         return False
 
 def main():
-    
-    #Input and Logging work
-    #videoPath = 'test.mp4'
     
 ############################################################
 # Command line parsing.
